@@ -6,9 +6,8 @@ const PORT = 5050;
 const notes= [
   {      
     id: "",
-    notes-title: "",
-    Email: "",
-    Phone: "",
+    notesTitle: "",
+    notesText:"",
   }
 ];
 //Middleware
@@ -17,7 +16,7 @@ app.use(express.json());
 app.use(logger("dev"));
 //GET - /api/tables
 // View all tables
-app.get("/api/tables", function(req, res){
+app.get("/api/notes", function(req, res){
   res.json(tables);
 })
 
