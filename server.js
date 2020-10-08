@@ -2,7 +2,8 @@ const express = require("express");
 const logger = require("morgan");
 const fs = require("fs")
 const app = express();
-const PORT = 5050;
+// const PORT = 5050 wrong 
+const PORT = process.env.PORT || 5050
 const notes= [
   {      
     id: "",
